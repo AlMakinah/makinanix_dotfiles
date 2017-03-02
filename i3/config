@@ -161,4 +161,30 @@ exec_always $HOME/.config/feh/launch.sh
 new_window none
 
 smart_gaps on
-gaps inner 10
+gaps inner 5
+gaps outer 3
+
+# Colors {{{
+
+set $color-primary #fbbf16
+set $color-secondary #222f38
+set $color-tertiary #334651
+set $color-alert #bd2c40
+set $color-light-gray #acacac
+set $color-medium-gray #777777
+set $color-dark-gray #555555
+set $color-black #000000
+set $color-white #e6e6e6
+
+# XXX: To not confuse border with background color the i3 docs says this:
+# Note that for the window decorations, the color around the child window is the
+# background color, and the border color is only the two thin lines at the top
+# of the window.
+
+# state                    border              background          text                 indicator
+client.focused             $color-dark-gray    #ff0074             $color-white         $color-medium-gray
+client.focused_inactive    $color-black        $color-black        $color-medium-gray   $color-black
+client.unfocused           $color-black        $color-black        $color-dark-gray     $color-black
+client.urgent              $color-alert        $color-alert        $color-black         $color-black
+client.placeholder         $color-black        $color-black        $color-white         $color-black
+client.background          $color-black
