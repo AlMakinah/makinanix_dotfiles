@@ -188,3 +188,17 @@ client.unfocused           $color-black        $color-black        $color-dark-g
 client.urgent              $color-alert        $color-alert        $color-black         $color-black
 client.placeholder         $color-black        $color-black        $color-white         $color-black
 client.background          $color-black
+
+set $borderwidth 1
+
+# }}}
+# Windows {{{
+
+# Use Mouse+$win to drag floating windows to their wanted position
+floating_modifier $win
+
+# Set the border width for all windows
+for_window [class="^.*"] border pixel $borderwidth
+
+# Application specific setups
+for_window [class="chromium" window_role="app"] floating enable
