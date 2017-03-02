@@ -194,9 +194,6 @@ set $borderwidth 1
 # }}}
 # Windows {{{
 
-# Use Mouse+$win to drag floating windows to their wanted position
-floating_modifier $win
-
 # Set the border width for all windows
 for_window [class="^.*"] border pixel $borderwidth
 
