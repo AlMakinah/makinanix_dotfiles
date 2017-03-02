@@ -168,12 +168,12 @@ gaps outer 3
 
 set $color-primary #fbbf16
 set $color-secondary #222f38
-set $color-tertiary #334651
+set $color-tertiary #2c7827
 set $color-alert #bd2c40
 set $color-light-gray #acacac
 set $color-medium-gray #777777
 set $color-dark-gray #555555
-set $color-black #000000
+set $color-black #222222
 set $color-white #e6e6e6
 
 # XXX: To not confuse border with background color the i3 docs says this:
@@ -182,7 +182,7 @@ set $color-white #e6e6e6
 # of the window.
 
 # state                    border              background          text                 indicator
-client.focused             $color-dark-gray    #ff0074             $color-white         $color-medium-gray
+client.focused             $color-dark-gray    $color-tertiar      $color-white         $color-medium-gray
 client.focused_inactive    $color-black        $color-black        $color-medium-gray   $color-black
 client.unfocused           $color-black        $color-black        $color-dark-gray     $color-black
 client.urgent              $color-alert        $color-alert        $color-black         $color-black
