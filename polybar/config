@@ -18,12 +18,12 @@ primary = #fbbf16
 secondary = #222f38
 alert = #bd2c40
 
-[bar/example]
+[bar/makinanix]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 24
 ;offset-x = 1%
-;offset-y = 1%
+offset-y = 100%
 ;radius = 6.0
 fixed-center = false
 
@@ -48,7 +48,7 @@ font-2 = SauceCodePro\ Nerd\ Font:pixelsize=13;1
 
 modules-left = bspwm i3
 modules-center = 
-modules-right = filesystem xbacklight volume xkeyboard memory cpu wlan battery date powermenu
+modules-right = filesystem memory cpu xbacklight volume xkeyboard wlan battery date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -301,7 +301,7 @@ format-spacing = 1
 label-open = ""
 label-open-foreground = ${colors.primary}
 label-close = " cancel"
-label-close-foreground = ${colors.background-alt}
+label-close-foreground = ${colors.primary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
